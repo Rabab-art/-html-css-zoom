@@ -1,0 +1,68 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-color: black;
+    font-family: sans-serif;
+}
+
+.main-container{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-wrap:wrap;
+    justify-content: center;
+}
+
+.participants{
+    flex-basis: 20vw;
+    height: 10vw;
+    margin:5px;
+	padding:50px;
+	background-image: url(https://picsum.photos/seed/picsum/200/100);
+    background-size: contain;
+    background-repeat:no-repeat;
+    position: relative;
+}
+
+.box-text{
+    font-weight: bolder;
+    color: white;
+    padding: 5px;
+    padding-right: 1px;
+    background-color:rgba(0, 0, 0, 0.5);
+    width: 50%;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.footer-container{
+    
+    flex-direction:row;
+    height: 10vh;
+    position: relative;
+}
+
+footer{
+    flex-basis: 100px;
+    position: fixed;
+    z-index: 1;
+}
+
+
+
