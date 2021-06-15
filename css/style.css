@@ -2,40 +2,32 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-    
+    font-family: sans-serif;    
 }
 
-body{
-    background-color: black;
-    font-family: sans-serif;
-}
 
-.main-container{
-    max-width: 1300px;
-    margin: 0 auto;
-}
-
-.flex{
+.container{
+    height: 100vh;
     display: flex;
-    flex-direction:column;
-    width: 100%;
+    flex-direction: column;
+}
+
+header{
+    height: 80px;
+    background-color: white;
 }
 
 main{
     flex-grow: 1;
-    display: flex;
-    flex-wrap:wrap;
-    justify-content: center;
+    overflow: auto;
+    background-color: black;
 }
 
-.participants{
-    flex-basis: 20vw;
-    height: 10vw;
-    margin:5px;
-	padding:50px;
-	background-image: url(https://picsum.photos/seed/picsum/200/100);
-    background-size: contain;
-    background-repeat:no-repeat;
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: flex-start;
     position: relative;
 }
 
@@ -51,17 +43,16 @@ main{
     bottom: 0;
 }
 
-.footer-container{
-    
-    flex-direction:row;
-    height: 10vh;
-    position: relative;
+img{
+    object-fit: cover;
 }
 
 footer{
-    flex-basis: 100px;
-    position: fixed;
-    z-index: 1;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
 }
 
 
